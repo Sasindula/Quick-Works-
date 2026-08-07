@@ -1,0 +1,111 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
+
+/* LAYOUT */
+body{
+    background:#0f172a;
+    color:#fff;
+}
+
+/* SIDEBAR */
+.sidebar{
+    width:240px;
+    height:100vh;
+    position:fixed;
+    background:#111827;
+    padding:20px;
+}
+
+.sidebar h2{
+    color:#00e6ff;
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.sidebar a{
+    display:block;
+    color:#fff;
+    padding:12px;
+    text-decoration:none;
+    border-radius:8px;
+    margin-bottom:10px;
+    transition:0.3s;
+}
+
+.sidebar a:hover,
+.sidebar a.active{
+    background:#00e6ff;
+    color:#000;
+}
+
+/* MAIN */
+.main{
+    margin-left:240px;
+    padding:25px;
+}
+
+/* TOPBAR */
+.topbar{
+    background:#1f2937;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:20px;
+}
+
+/* TABLE */
+.table{
+    width:100%;
+    border-collapse:collapse;
+    background:#1e293b;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.table th{
+    background:#00e6ff;
+    color:#000;
+    padding:12px;
+}
+
+.table td{
+    padding:12px;
+    text-align:center;
+    border-bottom:1px solid #334155;
+}
+
+/* STATUS */
+.status-active{
+    color:#22c55e;
+    font-weight:bold;
+}
+
+.status-blocked{
+    color:#ef4444;
+    font-weight:bold;
+}
+
+/* BUTTONS */
+.btn{
+    padding:6px 12px;
+    border-radius:6px;
+    text-decoration:none;
+    color:#fff;
+    font-size:12px;
+    margin:2px;
+    display:inline-block;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+.green{background:#22c55e;}
+.red{background:#ef4444;}
+.orange{background:#f97316;}
+.blue{background:#3b82f6;}

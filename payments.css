@@ -1,0 +1,154 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
+
+/* BODY */
+body{
+    background:#0b1220;
+    color:#fff;
+}
+
+/* SIDEBAR */
+.sidebar{
+    width:240px;
+    height:100vh;
+    position:fixed;
+    left:0;
+    top:0;
+    background:#111827;
+    padding:20px;
+}
+
+.sidebar h2{
+    color:#00e6ff;
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.sidebar a{
+    display:block;
+    padding:12px;
+    color:#fff;
+    text-decoration:none;
+    border-radius:8px;
+    margin-bottom:10px;
+    transition:0.3s;
+}
+
+.sidebar a:hover,
+.sidebar a.active{
+    background:#00e6ff;
+    color:#000;
+}
+
+/* MAIN */
+.main{
+    margin-left:240px;
+    padding:25px;
+}
+
+/* TOPBAR */
+.topbar{
+    background:#1f2937;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:20px;
+}
+
+.topbar h1{
+    color:#00e6ff;
+}
+
+.topbar p{
+    opacity:0.7;
+    margin-top:5px;
+}
+
+/* TABLE */
+.table{
+    width:100%;
+    border-collapse:collapse;
+    background:#1e293b;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+/* HEADER */
+.table th{
+    background:#00e6ff;
+    color:#000;
+    padding:14px;
+    text-transform:uppercase;
+    font-size:13px;
+}
+
+/* ROW */
+.table td{
+    padding:12px;
+    text-align:center;
+    border-bottom:1px solid #334155;
+    font-size:14px;
+}
+
+/* HOVER EFFECT */
+.table tr:hover{
+    background:#111827;
+    transition:0.3s;
+}
+
+/* STATUS BADGES */
+.status{
+    padding:5px 10px;
+    border-radius:6px;
+    font-weight:bold;
+    font-size:12px;
+    display:inline-block;
+}
+
+/* PAID */
+.paid{
+    background:#22c55e;
+    color:#000;
+}
+
+/* UNPAID */
+.unpaid{
+    background:#ef4444;
+    color:#fff;
+}
+
+/* PENDING */
+.pending{
+    background:#facc15;
+    color:#000;
+}
+
+/* EMPTY VALUE */
+.empty{
+    color:#94a3b8;
+}
+
+/* SCROLL FIX */
+.table-wrapper{
+    overflow-x:auto;
+}
+
+/* SMALL RESPONSIVE */
+@media(max-width:768px){
+    .sidebar{
+        width:200px;
+    }
+
+    .main{
+        margin-left:200px;
+    }
+
+    .table td, .table th{
+        font-size:12px;
+        padding:8px;
+    }
+}

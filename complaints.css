@@ -1,0 +1,163 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+/* BODY */
+body{
+    background:linear-gradient(135deg,#0f172a,#111827,#0b1220);
+    color:#fff;
+}
+
+/* SIDEBAR */
+.sidebar{
+    width:240px;
+    height:100vh;
+    position:fixed;
+    left:0;
+    top:0;
+    background:rgba(17,24,39,0.85);
+    backdrop-filter: blur(12px);
+    padding:20px;
+    box-shadow:5px 0 25px rgba(0,0,0,0.5);
+}
+
+.sidebar h2{
+    text-align:center;
+    color:#00e6ff;
+    margin-bottom:25px;
+    letter-spacing:2px;
+}
+
+.sidebar a{
+    display:block;
+    padding:12px;
+    margin-bottom:10px;
+    color:#fff;
+    text-decoration:none;
+    border-radius:10px;
+    transition:0.3s;
+    font-weight:500;
+}
+
+.sidebar a:hover,
+.sidebar a.active{
+    background:rgba(0,230,255,0.2);
+    border-left:4px solid #00e6ff;
+    transform:translateX(6px);
+}
+
+/* MAIN */
+.main{
+    margin-left:240px;
+    padding:25px;
+}
+
+/* TOPBAR */
+.topbar{
+    background:rgba(255,255,255,0.06);
+    backdrop-filter: blur(10px);
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+    margin-bottom:25px;
+}
+
+.topbar h1{
+    color:#00e6ff;
+    font-size:24px;
+}
+
+.topbar p{
+    opacity:0.7;
+    margin-top:5px;
+}
+
+/* SECTION TITLE */
+.title{
+    margin:25px 0 15px;
+    font-size:20px;
+    letter-spacing:1px;
+}
+
+.blue{ color:#38bdf8; }
+.red{ color:#ef4444; }
+
+/* TABLE WRAPPER (scroll fix) */
+.table{
+    width:100%;
+    border-collapse:collapse;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* TABLE HEAD */
+.table th{
+    background:linear-gradient(90deg,#00e6ff,#38bdf8);
+    color:#000;
+    padding:14px;
+    text-transform:uppercase;
+    font-size:13px;
+}
+
+/* TABLE ROW */
+.table td{
+    padding:14px;
+    text-align:center;
+    border-bottom:1px solid rgba(255,255,255,0.08);
+    font-size:14px;
+}
+
+/* ROW HOVER */
+.table tr:hover{
+    background:rgba(0,230,255,0.08);
+    transition:0.3s;
+}
+
+/* BADGES */
+.badge{
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:bold;
+    display:inline-block;
+    color:#000;
+    background:#facc15;
+    box-shadow:0 0 10px rgba(250,204,21,0.4);
+}
+
+/* STATUS COLORS (if needed later) */
+.status-pending{
+    background:#facc15;
+}
+
+.status-resolved{
+    background:#22c55e;
+}
+
+.status-rejected{
+    background:#ef4444;
+    color:#fff;
+}
+
+/* SCROLL RESPONSIVE */
+@media(max-width:768px){
+    .sidebar{
+        width:200px;
+    }
+
+    .main{
+        margin-left:200px;
+    }
+
+    .table td, .table th{
+        font-size:12px;
+        padding:10px;
+    }
+}
