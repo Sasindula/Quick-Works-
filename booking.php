@@ -46,7 +46,7 @@ if(isset($_POST['book'])){
     $description = trim($_POST['description']);
     $job_date = $_POST['job_date'];
     $selected_slots = isset($_POST['time_slots']) ? $_POST['time_slots'] : [];
-    $payment_option = $_POST['payment_method'] ?? 'CASH';
+    $payment_option = $_POST['payment_method'] ?? 'LATER';
 
     // Validate slots
     if(empty($selected_slots)){
@@ -485,15 +485,15 @@ $page_title = 'Book Worker';
                         <label class="form-label fw-medium">Payment Method</label>
                         <div class="row g-2">
                             <div class="col-6">
-                                <input type="radio" class="btn-check" name="payment_method" id="pay_cash" value="CASH" checked autocomplete="off">
-                                <label class="btn btn-outline-primary w-100 py-3" for="pay_cash">
-                                    <i class="bi bi-cash me-1"></i> Cash
+                                <input type="radio" class="btn-check" name="payment_method" id="pay_later" value="LATER" checked autocomplete="off">
+                                <label class="btn btn-outline-primary w-100 py-3" for="pay_later">
+                                    <i class="bi bi-clock-history me-1"></i> Pay Later
                                 </label>
                             </div>
                             <div class="col-6">
                                 <input type="radio" class="btn-check" name="payment_method" id="pay_card" value="CARD" autocomplete="off">
                                 <label class="btn btn-outline-primary w-100 py-3" for="pay_card">
-                                    <i class="bi bi-credit-card me-1"></i> Card
+                                    <i class="bi bi-credit-card me-1"></i> Pay by Card
                                 </label>
                             </div>
                         </div>
