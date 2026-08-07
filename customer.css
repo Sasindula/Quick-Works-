@@ -1,0 +1,181 @@
+/* =========================
+   BASE SETUP
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #eef2f7;
+    color: #333;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+.container {
+    display: flex;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(180deg, #4e54c8, #6a11cb);
+    color: white;
+    position: fixed;
+    padding: 20px;
+    box-shadow: 4px 0 15px rgba(0,0,0,0.1);
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.sidebar ul li:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateX(5px);
+}
+
+.sidebar ul li.active {
+    background: #ffb347;
+    color: #000;
+    font-weight: bold;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+.main {
+    margin-left: 250px;
+    padding: 30px;
+    width: 100%;
+}
+
+/* =========================
+   WELCOME BOX
+========================= */
+.welcome-box {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 20px;
+    padding: 40px;
+    color: white;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.welcome-box h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.welcome-box p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+/* BUTTON */
+.welcome-box button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 50px;
+    background: #ffb347;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.welcome-box button:hover {
+    background: #ff9800;
+    transform: scale(1.05);
+}
+
+/* =========================
+   CARDS
+========================= */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* CARD STYLE */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    border-top: 4px solid #6a11cb;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.card h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .main {
+        margin-left: 200px;
+        padding: 20px;
+    }
+
+    .welcome-box {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .main {
+        margin-left: 0;
+    }
+}

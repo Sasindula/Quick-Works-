@@ -1,0 +1,175 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body {
+    background:#f5f7fb;
+}
+
+/* CONTAINER */
+.container {
+    display:flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width:250px;
+    height:100vh;
+    background: linear-gradient(180deg, #4e54c8, #6a11cb);
+    color:white;
+    padding:20px;
+    position:fixed;
+}
+
+.sidebar ul {
+    list-style:none;
+    margin-top:20px;
+}
+
+.sidebar ul li {
+    padding:10px;
+    margin:10px 0;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active {
+    background:#ffb347;
+    color:black;
+}
+
+/* MAIN */
+.main {
+    margin-left:250px;
+    padding:30px;
+    width:100%;
+}
+
+/* SEARCH */
+#searchInput {
+    padding:12px;
+    width:300px;
+    border-radius:25px;
+    border:1px solid #ccc;
+    margin:20px 0;
+}
+
+/* GRID */
+.worker-grid {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap:20px;
+}
+
+/* CARD */
+.worker-card {
+    background:#fff;
+    border-radius:16px;
+    padding:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    border:1px solid #f0f0f0;
+    transition:0.3s;
+}
+
+.worker-card:hover {
+    transform:translateY(-6px);
+    box-shadow:0 12px 30px rgba(0,0,0,0.12);
+}
+
+/* HEADER */
+.worker-header {
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+/* 👤 SMALL PROFILE PHOTO */
+.worker-header img {
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    object-fit:cover;
+    border:2px solid #6a11cb;
+    padding:2px;
+    background:white;
+}
+
+/* NAME */
+.worker-header h3 {
+    font-size:15px;
+}
+
+/* VERIFIED */
+.verified {
+    font-size:11px;
+    color:green;
+    margin-left:5px;
+}
+
+/* LOCATION */
+.location {
+    font-size:12px;
+    color:#777;
+}
+
+/* SKILLS */
+.skills {
+    margin-top:12px;
+}
+
+.skills span {
+    background:#eef2ff;
+    color:#4e54c8;
+    padding:5px 10px;
+    border-radius:20px;
+    font-size:12px;
+}
+
+/* DETAILS */
+.worker-details {
+    display:flex;
+    justify-content:space-between;
+    margin-top:12px;
+    font-size:13px;
+}
+
+/* RATING */
+.rating {
+    color:#ff9800;
+    font-weight:bold;
+}
+
+/* FOOTER */
+.worker-footer {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:15px;
+}
+
+/* PRICE */
+.price {
+    font-weight:bold;
+    color:#222;
+}
+
+/* BUTTON */
+.hire-btn {
+    padding:7px 14px;
+    background:linear-gradient(135deg,#6a11cb,#4e54c8);
+    color:white;
+    border-radius:20px;
+    text-decoration:none;
+    font-size:13px;
+    transition:0.3s;
+}
+
+.hire-btn:hover {
+    transform:scale(1.05);
+    box-shadow:0 5px 15px rgba(106,17,203,0.3);
+}
